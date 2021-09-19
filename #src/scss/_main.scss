@@ -1,0 +1,143 @@
+.main {
+    padding: 100px 0 0 0;
+    background-color: $bg;
+
+    &_body {
+    }
+
+    &_row {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0 0 0;
+    }
+
+    &_content {
+        max-width: 600px;
+        align-self: flex-end;
+        
+    }
+
+    &_content-title {
+        font-size: 50px;
+        line-height: 140%;
+        color: $secondColor;
+        margin: 0 0 30px 0;
+        span{
+            color: $bg2;
+        }
+    }
+
+    &_content-text {
+        max-width: 460px;
+        margin: 0 0 60px 0;
+    }
+
+    &_content-search {
+        margin: 0 0 110px 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 5;
+        max-width: 480px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    &_content-input {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        display: block;
+        background: rgba(40, 48, 54, 1);
+        height: 60px;
+        width: 100%;
+        border-radius: 15px;
+        padding: 0 0 0 50px;
+        background-image: url(../img/search.svg);
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        transition: all 0.5s ease-in-out 0s;
+        color: $secondColor;
+    }
+    &_content-input:focus{
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    &_content-input::placeholder{
+        transition: 0.5s ease-in-out 0s;
+    }
+
+    &_content-input:focus::placeholder{
+        transform: translateX(100px);
+        transition: 0.5s ease-in-out 0s;
+    }
+
+
+      
+
+
+    
+    &_content-button {
+        display: inline-block;
+        color: $secondColor;
+        position: absolute;
+        z-index: 5;
+        top: 6px;
+        right: 6px;
+    }
+
+    &_content-socials {
+        .icon{
+            width: 35px;
+            height: 29px;
+            color: $secondColor;
+            margin: 0 25px 0 0 ;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        .icon:hover{
+            color: $bg2;
+        }
+    }
+
+    &_img {
+        margin: 0 -100px 0 0;
+    }
+}
+
+.text {
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 400;
+    color: $mainColor;
+}
+
+@media(max-width: 1024px){
+    .main_img{
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 767px){
+    .main_row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main_img{
+       display: none;
+    }
+
+    .main_content-input::placeholder{
+        text-overflow: ellipsis;
+    }
+    .main_content-button{
+        padding: 0 15px;
+    }
+}
+
+@media(max-width: 350px){
+    .main_content-input::placeholder{
+        opacity: 0;
+        visibility: hidden;
+    }
+}

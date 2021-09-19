@@ -61,7 +61,8 @@
         }
     }
 
-    &_account-btn {
+    &_account-btn:hover {
+        animation: bounce 0.8s;
     }
 }
 
@@ -148,9 +149,7 @@
 		transform: translateY(-8px);
 	}
 }
-.button:hover{
-        animation: bounce 0.8s;
-    }
+
 
 
 .menu-arrow.active{
