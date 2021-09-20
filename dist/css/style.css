@@ -528,6 +528,130 @@ h6 {
   color: #9A9DA0;
 }
 
+.cards {
+  background-color: #1E252B;
+  padding: 195px 0 0 0;
+}
+
+.cards_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 90px 0;
+}
+
+.cards_title {
+  margin: 0 0 20px 0;
+  max-width: 455px;
+}
+
+.cards_text {
+  max-width: 455px;
+  text-align: center;
+}
+
+.cards_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards_item {
+  max-width: 392px;
+  display: block;
+  cursor: pointer;
+  margin: 0 0 100px 0;
+}
+
+.cards_item-radio {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.cards_item-body {
+  padding: 30px;
+}
+
+.cards_item-title {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards_title-text {
+  margin: 0 0 50px 40px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.cards_title-name {
+  font-size: "Roboto";
+  color: #E8E9EA;
+  line-height: 130%;
+  margin: 0 0 8px 0;
+}
+
+.cards_title-condition {
+  color: rgba(255, 165, 55, 0.55);
+}
+
+.cards_item-text {
+  margin: 0 0 35px 0;
+  font-size: 16px;
+  line-height: 187%;
+}
+
+.cards_item-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards_item-icons .icon {
+  width: 25px;
+  height: 21px;
+}
+
+.cards_item-button {
+  display: inline-block;
+}
+
+.title {
+  font-size: 48px;
+  color: #E8E9EA;
+  line-height: 130%;
+}
+
+.cards_item-radio:checked + .cards_item-body {
+  background: -o-linear-gradient(45deg, #242c31 49%, #5b3e33 100%);
+  background: linear-gradient(45deg, #242c31 49%, #5b3e33 100%);
+  border-top: 2px solid #5b3e33;
+  border-radius: 20px;
+}
+
 body {
   font-family: "Poppins";
   font-weight: 500;

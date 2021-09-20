@@ -1,0 +1,109 @@
+.cards {
+    background-color: $bg;
+    padding: 195px 0 0 0;
+
+    &_body {
+    }
+
+    &_about {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 90px 0;
+    }
+
+    &_title {
+        margin: 0 0 20px 0;
+        max-width: 455px;
+    }
+
+    &_text {
+        max-width: 455px;
+        text-align: center;
+    }
+
+    &_cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &_item {
+        max-width: 392px;
+        display: block;
+        cursor: pointer;
+        margin: 0 0 100px 0;
+    }
+
+    &_item-radio {
+        appearance: none;
+        width: 0;
+        height: 0;
+        position: absolute;
+    }
+    
+    &_item-body{
+        padding: 30px;
+    }
+
+    &_item-title {
+        display: block;
+        display: flex;
+    }
+
+    &_title-text {
+        margin: 0 0 50px 40px;
+        align-self: center;
+        
+    }
+
+    &_title-name {
+        font-size: $secondFF;
+        color: $secondColor;
+        line-height: 130%;
+        margin: 0 0 8px 0;
+    }
+
+    &_title-condition {
+        color: rgba(255, 165, 55, 0.55);
+    }
+
+    &_item-text {
+        margin: 0 0 35px 0;
+        font-size: 16px;
+        line-height: 187%;
+    }
+
+    &_item-btns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_item-icons {
+        .icon{
+            width: 25px;
+            height: 21px;
+        }
+    }
+
+    &_item-button{
+        display: inline-block;
+
+    }
+}
+
+.title {
+    font-size: 48px;
+    color: $secondColor;
+    line-height: 130%;
+}
+
+.cards_item-radio:checked + .cards_item-body{
+    background: linear-gradient(45deg, rgb(36, 44, 49) 49%, rgb(91, 62, 51) 100%);
+    border-top: 2px solid #5b3e33;
+    border-radius: 20px;
+
+}
+
+
