@@ -70,6 +70,7 @@
 
     &_list {
         display: flex;
+        cursor: pointer;
         li{
             position: relative;
             margin: 0 40px 0 0;
@@ -88,6 +89,19 @@
             color: $bg2;
         }
         a:hover .icon{
+            color: $bg2;
+        }
+
+        span{
+            color: $mainColor;
+            font-size: 16px;
+            line-height: 150%;
+            transition: all 0.4s ease 0s;
+        }
+        span:hover{
+            color: $bg2;
+        }
+        span:hover .icon{
             color: $bg2;
         }
         .icon{

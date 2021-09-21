@@ -1,3 +1,4 @@
+
 @@include('alert.js');
 @@include('isMobile.js');
 
@@ -31,3 +32,20 @@ if(iconMenu){
         menuBody.classList.toggle('active');
     })
 }
+
+
+// //!CARDS likes..........................//
+
+let like = document.querySelectorAll('.icon_like');
+
+like.forEach(function(getLike){
+  getLike.addEventListener('click', function(e){
+    getLike.classList.toggle('active');
+  })
+})
+
+
+
+
+
+

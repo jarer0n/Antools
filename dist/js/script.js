@@ -1,3 +1,4 @@
+
 ;
 let isMobile = {
     Android: function() {
@@ -50,3 +51,20 @@ if(iconMenu){
         menuBody.classList.toggle('active');
     })
 }
+
+
+// //!CARDS likes..........................//
+
+let like = document.querySelectorAll('.icon_like');
+
+like.forEach(function(getLike){
+  getLike.addEventListener('click', function(e){
+    getLike.classList.toggle('active');
+  })
+})
+
+
+
+
+
+
