@@ -56,28 +56,27 @@
         padding: 0 0 0 50px;
         background-image: url(../img/search.svg);
         background-repeat: no-repeat;
-        background-position: 10px center;
+        background-position:140px center;
+        transform: translateX(-135px);
         transition: all 0.5s ease-in-out 0s;
         color: $secondColor;
     }
     &_content-input:focus{
+        transform: translateX(0);
         transition: all 0.5s ease-in-out 0s;
+        background-position: 5px center;
     }
 
     &_content-input::placeholder{
+        padding-left: 120px;
         transition: 0.5s ease-in-out 0s;
     }
 
     &_content-input:focus::placeholder{
-        transform: translateX(100px);
-        transition: 0.5s ease-in-out 0s;
+        // transform: translateX(100px);
+        // transition: 0.5s ease-in-out 0s;
     }
-
-
-      
-
-
-    
+  
     &_content-button {
         display: inline-block;
         color: $secondColor;
@@ -85,6 +84,8 @@
         z-index: 5;
         top: 6px;
         right: 6px;
+        transform: translateX(-135px);
+        transition: all 0.5s ease-in-out 0s;
     }
 
     &_content-socials {
@@ -103,6 +104,11 @@
     &_img {
         margin: 0 -100px 0 0;
     }
+}
+
+.main_content-input:focus + .main_content-button{
+    transform: translateX(0);
+
 }
 
 .text {
