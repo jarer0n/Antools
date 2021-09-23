@@ -1058,9 +1058,6 @@ h6 {
   -webkit-transform-origin: left;
       -ms-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: all 0.4s ease-in-out 0.5s;
-  -o-transition: all 0.4s ease-in-out 0.5s;
-  transition: all 0.4s ease-in-out 0.5s;
 }
 
 .brands_links:hover {
@@ -1102,6 +1099,58 @@ h6 {
   }
 }
 
+.newcomer {
+  background-color: #1E252B;
+  padding: 200px 0;
+}
+
+.newcomer_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.newcomer_info {
+  max-width: 401px;
+}
+
+.newcomer_info-title {
+  margin: 0 0 30px 0;
+}
+
+.newcomer_info-text {
+  margin: 0 0 60px 0;
+}
+
+.newcomer_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.newcomer_info-btn:hover {
+  -webkit-animation: bounce 0.8s;
+          animation: bounce 0.8s;
+}
+
+.newcards_item {
+  max-width: 284px;
+  max-height: 288px;
+  margin: 0 0 50px 0;
+}
+
+.newcards-text {
+  font-size: 14px;
+}
+
 body {
   font-family: "Poppins";
   font-weight: 500;
@@ -1141,11 +1190,19 @@ body.lock {
   .cards_item {
     max-width: 350px;
   }
+
+  .newcards_item {
+    max-width: 284px;
+  }
 }
 
 @media (max-width: 1080px) {
   .cards_item {
     max-width: 300px;
+  }
+
+  .newcards_item {
+    max-width: 284px;
   }
 }
 
@@ -1155,8 +1212,61 @@ body.lock {
   }
 }
 
+@media (max-width: 1000px) {
+  .newcomer {
+    padding: 50px 0;
+  }
+
+  .newcomer_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 100%;
+  }
+
+  .newcomer_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .newcomer_info-text {
+    margin: 0 0 40px 0;
+  }
+
+  .newcomer_cards {
+    padding: 30px 0 0 0;
+    min-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 930px) {
   .cards_item {
+    max-width: 395px;
+  }
+
+  .newcards_item {
     max-width: 395px;
   }
 }
@@ -1190,6 +1300,10 @@ body.lock {
 
   .cards {
     padding: 70px 0;
+  }
+
+  .newcards_item {
+    min-width: 100%;
   }
 }
 
@@ -1371,6 +1485,10 @@ body.lock {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+
+  .brands_list li {
+    margin: 0 0 20px 0;
+  }
 }
 
 @media (max-width: 350px) {
@@ -1434,6 +1552,14 @@ body.lock {
 }
 
  @media (max-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1000px){
 
 @supports (-webkit-appearance:none){
 

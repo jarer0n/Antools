@@ -1,0 +1,97 @@
+.newcomer {
+	background-color: $bg;
+	padding: 200px 0;
+
+		&_body {
+		}
+
+		&_row {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&_info {
+			max-width: 401px;
+		}
+
+		&_info-title {
+			margin: 0 0 30px 0;
+		}
+
+		&_info-text {
+			margin: 0 0 60px 0;
+		}
+
+		&_cards {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
+
+		&_info-btn:hover {
+			animation: bounce 0.8s;
+		}
+}
+
+.newcards {
+
+		&_item {
+			max-width: 284px;
+			max-height: 288px;
+			margin: 0 0 50px 0;
+		}
+		&-text {
+			font-size: $mainFontSize;
+		}
+}
+
+
+@media(max-width:1210px) {
+	.newcards_item{
+		max-width: 284px;
+	}
+}
+@media(max-width:1080px) {
+	.newcards_item{
+		max-width: 284px;
+	}
+}
+@media(max-width:1000px){
+	.newcomer{
+		padding: 50px 0;
+	}
+	.newcomer_row{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-width: 100%;
+	}
+	.newcomer_info{
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	.newcomer_info-text {
+		margin: 0 0 40px 0;
+	}
+	.newcomer_cards {
+		padding: 30px 0 0 0;
+		min-width: 100%;
+		justify-content: center;
+	}
+}
+
+@media(max-width:930px) {
+	
+	.newcards_item{
+		max-width: 395px;
+	}
+}
+@media(max-width:820px) {
+	
+	.newcards_item{
+		min-width: 100%;
+	}
+}
