@@ -1,0 +1,113 @@
+.brands {
+    background-color: $bg;
+
+    &_body {
+    }
+
+    &_item {
+        background: linear-gradient(315deg, rgb(33, 40, 47) 67%, rgb(163, 80, 49)180%);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 55px 10px;
+        position: relative;
+        box-shadow: 0px -3px 5px -1px rgba(163, 81, 49, 0.55);
+    }
+    
+
+    &_title {
+        color: $secondColor;
+        font-size: $secondFontSize;
+        line-height: 150%;
+        margin: 0 0 50px 0;
+    }
+
+    &_brands {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        li{
+            display: inline-block;
+            padding: 10px 15px;
+        }
+        li:last-child{
+            margin: 0;
+        }
+    }
+
+    &_links {
+        display: inline-block;
+        position: relative;
+        img{
+            max-width: 100%;
+            max-height: 42px;
+            object-fit: cover;
+        }
+    }
+    &_links::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(45deg, rgb(33, 40, 47), rgb(163, 81, 49) 100%);
+        transform-origin: left;
+        transition: all 0.4s ease-in-out 0.5s;
+    }
+    &_links:hover{
+        -webkit-animation: pulsate-fwd 0.7s ease-in-out infinite both;
+	        animation: pulsate-fwd 0.7s ease-in-out infinite both;
+
+    }
+
+
+}
+
+@-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+  @media(max-width:430px) {
+      .brands_list{
+          width: auto;
+          flex-direction: column;
+          align-items: flex-start;
+      }
+  }
