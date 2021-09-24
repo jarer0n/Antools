@@ -1,0 +1,130 @@
+.contributor {
+    background-color: $bg;
+    padding-bottom: 200px;
+
+    &_body {
+        max-width: 576px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    &_row {
+
+    }
+
+    &_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_info-title {
+        margin: 0 0 25px 0;
+    }
+
+    &_info-text {
+        text-align: center;
+        max-width: 430px;
+        margin: 0 0 70px 0;
+    }
+
+    &_form {
+    }
+
+    &_form-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_form-input {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        align-self: center;
+        background-image: url(../img/email.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: #FF6E30;
+        transition:0.3s ease-in-out 0s;
+        color: transparent;
+        -webkit-animation: pulsate-fwd 0.8s ease-in-out infinite both;
+	    animation: pulsate-fwd 0.8s ease-in-out infinite both;
+        cursor: pointer;
+    }
+    &_form-input::placeholder{
+        color: transparent;
+    }
+
+    &_form-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        transform: translateX(-200px);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out 0.3s;
+    }
+}
+.icon-mail{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    color: $secondColor;
+}
+.contributor_form-input:focus + .contributor_form-btn {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+.contributor_form-input:focus{
+    display: inline-block;
+        width: 100%;
+        height: 64px;
+        border-radius: 20px;
+        padding: 5px 20px;
+        background: rgb(255, 255, 255, 0.3);
+        color: $secondColor;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        animation: pulsate-fwd none;
+        
+}
+.contributor_form-input:focus::placeholder{
+    color: $mainColor;
+}
+
+
+@-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
