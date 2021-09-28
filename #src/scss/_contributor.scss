@@ -128,3 +128,14 @@
     }
   }
   
+  @media(max-width:767px){
+      .contributor{
+          padding-bottom: 50px;
+      }
+      .contributor_info-text{
+          margin: 0 0 50px 0;
+      }
+      .contributor_form-btn{
+          padding: 10px 15px;
+      }
+  }

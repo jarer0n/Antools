@@ -1,6 +1,6 @@
 .cards {
     background-color: $bg;
-    padding: 195px 0 ;
+    padding: 155px 0 ;
 
     &_body {
     }
@@ -407,4 +407,12 @@
     .cards{
         padding: 70px 0;
     }
+}
+@media(max-width:767px){
+        .cards{
+                padding: 20px 0 70px 0;
+        }
+        .cards_about{
+                margin: 0 0 40px 0;
+        }
 }
